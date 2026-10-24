@@ -1,1 +1,12 @@
-
+api-tienda-comics/
+├── data/
+├── public/                  ← NUEVO: el cliente
+│   ├── index.html
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       ├── api.js           # Funciones que llaman a la API
+│       └── app.js           # Lógica de la interfaz
+├── src/
+│   └── app.js               # Servidor Express (el de la API)
+└── package.json
