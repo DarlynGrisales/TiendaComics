@@ -7,10 +7,7 @@ import comicsRoutes from "./routes/comics.routes.js";
 const app = express();
 
 app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.json({ mensaje: "API de la Tienda de Cómics funcionando" });
-});
+app.use(express.static("public"));
 
 app.use("/api/autores", autoresRoutes);
 app.use("/api/comics", comicsRoutes);
